@@ -79,6 +79,7 @@
   border-radius: 0.7rem;
   padding: 1.5rem 3rem;
   outline: none;
+  cursor: pointer;
 
   color: inherit;
 
@@ -350,6 +351,10 @@
   padding: 2.8rem 1rem;
   padding-top: calc(2.8rem + 15rem);
   margin-top: -15rem;
+
+  @media (min-width: 425px) {
+    padding-bottom: 6rem;
+  }
 
   display: flex;
 }

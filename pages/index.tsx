@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import cn from "classnames";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Picture } from "next-img";
 import Countdown from "react-countdown";
 import Head from "../components/Head";
+import Slider from "../components/Slider";
+import MusicPlayer from "../components/MusicPlayer";
 import { LocomotiveScrollProvider } from "../components/LocomotiveScroll";
-import { Content } from "../components/Layout";
 import styles from "../styles/Home.module.scss";
 import "animate.css";
 
@@ -17,8 +17,10 @@ import femaleImg from "../assets/female.png";
 import akadNikahImg from "../assets/akad-nikah.png";
 import resepsiImg from "../assets/resepsi.png";
 
+
 const HomePage: React.FC = () => {
   const containerRef = useRef(null);
+  const sectionDateRef = useRef(null);
 
   return (
     <>
@@ -27,7 +29,7 @@ const HomePage: React.FC = () => {
         containerRef={containerRef}
         options={
           {
-            // smooth: true
+            /* smooth: true */
           }
         }
         watch={[]}
@@ -51,7 +53,10 @@ const HomePage: React.FC = () => {
               >
                 <Picture src={bridesImg} alt="Brides" />
               </div>
-              <button className={styles.saveTheDateButton}>
+              <button
+                className={styles.saveTheDateButton}
+                onClick={() => sectionDateRef.current.scrollIntoView()}
+              >
                 SAVE THE DATE
               </button>
             </section>
@@ -116,6 +121,7 @@ const HomePage: React.FC = () => {
             </section>
             <span className={styles.squigglyDevider} />
             <section
+              ref={sectionDateRef}
               className={cn(styles.section, styles.sectionEventSchedule)}
             >
               <div>
@@ -282,6 +288,9 @@ const HomePage: React.FC = () => {
                 )}
               />
             </section>
+            <section>
+              <Slider />
+            </section>
             <section className={cn(styles.section, styles.sectionOutro)}>
               <div className={styles.outroPray}>
                 “Semoga Allah meghimpun yang terserak dari keduanya, memberkati
@@ -317,6 +326,7 @@ const HomePage: React.FC = () => {
               . 2021
             </footer>
           </div>
+          <MusicPlayer data-scroll-sticky/>
         </main>
       </LocomotiveScrollProvider>
     </>
