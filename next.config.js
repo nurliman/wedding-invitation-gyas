@@ -1,5 +1,11 @@
-const withPreact = require('next-plugin-preact')
+const preact = require('preact');
+const withPlugins = require("next-compose-plugins");
+const withPrefresh = require('@prefresh/next');
+const nextPreact = require("next-plugin-preact");
+const nextImg = require("next-img/plugin");
+const hashClassName = require("./helpers/hashClassname");
 
-module.exports = withPreact({
-  /* regular next.js config options here */
-})
+module.exports = withPlugins(
+  [nextPreact, hashClassName, [nextImg, { breakpoints: [768] }]],
+  {}
+);
