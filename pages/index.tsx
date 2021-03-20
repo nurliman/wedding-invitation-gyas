@@ -248,7 +248,7 @@ const HomePage: React.FC = () => {
                   style={{ border: 0 }}
                   loading="lazy"
                   scrolling="no"
-                  src="https://maps.google.com/maps?q=Jl.+Perumahan+Sanggar+Indah+Banjaran+No.57,+Nagrak,+Kec.+Cangkuang,+Bandung,+Jawa+Barat+40238&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near"
+                  src="https://maps.google.com/maps?q=+-7.051242,107.540867&amp;t=m&amp;z=16&amp;output=embed&amp;iwloc=near"
                   title="place"
                   aria-label="place"
                 />
