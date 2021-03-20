@@ -7,7 +7,7 @@ import "keen-slider/keen-slider.min.css";
 
 import photo1Img from "../../assets/gallery/photo-1.jpg";
 import photo2Img from "../../assets/gallery/photo-2.jpg";
-import photo3Img from "../../assets/gallery/photo-3.jpg";
+// import photo3Img from "../../assets/gallery/photo-3.jpg";
 import photo4Img from "../../assets/gallery/photo-4.jpg";
 import photo5Img from "../../assets/gallery/photo-5.jpg";
 import photo6Img from "../../assets/gallery/photo-6.jpg";
@@ -18,7 +18,7 @@ import photo9Img from "../../assets/gallery/photo-9.jpg";
 const SLIDES = [
   { name: "Photo Gallery 1", img: photo1Img },
   { name: "Photo Gallery 2", img: photo2Img },
-  { name: "Photo Gallery 3", img: photo3Img },
+  // { name: "Photo Gallery 3", img: photo3Img },
   { name: "Photo Gallery 4", img: photo4Img },
   { name: "Photo Gallery 5", img: photo5Img },
   { name: "Photo Gallery 6", img: photo6Img },
