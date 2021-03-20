@@ -43,7 +43,7 @@ const Slider: React.FC = () => {
       setPause(false);
     },
     breakpoints: {
-      "(min-width: 768px)": {
+      "(min-width: 600px)": {
         slidesPerView: 2,
         mode: "free-snap",
       },
