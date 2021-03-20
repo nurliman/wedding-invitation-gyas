@@ -17,7 +17,6 @@ import femaleImg from "../assets/female.png";
 import akadNikahImg from "../assets/akad-nikah.png";
 import resepsiImg from "../assets/resepsi.png";
 
-
 const HomePage: React.FC = () => {
   const containerRef = useRef(null);
   const sectionDateRef = useRef(null);
@@ -326,7 +325,7 @@ const HomePage: React.FC = () => {
               . 2021
             </footer>
           </div>
-          <MusicPlayer data-scroll-sticky/>
+          <MusicPlayer data-scroll-sticky />
         </main>
       </LocomotiveScrollProvider>
     </>
