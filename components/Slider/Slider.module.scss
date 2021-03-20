@@ -1,7 +1,7 @@
 .slide {
   @media (max-width: 768px) {
     // width: fit-content !important;
-    // height: auto;
+    height: auto;
   }
 
   display: flex;
@@ -14,12 +14,14 @@
 
   & > * {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   & img {
     // @media (max-width:1024px) {
-      width: 100%;
-      height: auto;
+    width: 100%;
+    height: auto !important;
     // }
   }
 }
