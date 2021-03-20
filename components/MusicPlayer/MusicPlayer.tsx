@@ -41,7 +41,9 @@ const MusicPlayer: React.FC = () => {
         ) : playing ? (
           <Image src="/assets/pause.svg" width={20} height={20} />
         ) : (
-          <Image src="/assets/play.svg" width={20} height={20} />
+          <div className={styles.playIcon}>
+            <Image src="/assets/play.svg" width={20} height={20} />
+          </div>
         )}
       </button>
     </>
