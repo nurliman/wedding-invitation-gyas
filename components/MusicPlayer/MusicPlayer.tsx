@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import ReactHowler from "react-howler";
 import Spinner from "../Spinner";
@@ -17,6 +17,10 @@ const MusicPlayer: React.FC = () => {
       else setPlaying(!playing);
     }
   };
+
+  useEffect(() => {
+    setPreload(true);
+  }, []);
 
   return (
     <>
