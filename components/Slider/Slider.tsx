@@ -14,6 +14,8 @@ import photo6Img from "../../assets/gallery/photo-6.jpg";
 import photo7Img from "../../assets/gallery/photo-7.jpg";
 import photo8Img from "../../assets/gallery/photo-8.jpg";
 import photo9Img from "../../assets/gallery/photo-9.jpg";
+import photo10Img from "../../assets/gallery/photo-10.jpg";
+import photo11Img from "../../assets/gallery/photo-11.jpg";
 
 const SLIDES = [
   { name: "Photo Gallery 1", img: photo1Img },
@@ -25,6 +27,8 @@ const SLIDES = [
   { name: "Photo Gallery 7", img: photo7Img },
   { name: "Photo Gallery 8", img: photo8Img },
   { name: "Photo Gallery 9", img: photo9Img },
+  { name: "Photo Gallery 10", img: photo10Img },
+  { name: "Photo Gallery 11", img: photo11Img },
 ];
 
 const Slider: React.FC = () => {
