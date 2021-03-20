@@ -17,21 +17,21 @@ import photo9Img from "../../assets/gallery/photo-9.jpg";
 import photo10Img from "../../assets/gallery/photo-10.jpg";
 import photo11Img from "../../assets/gallery/photo-11.jpg";
 
-const SLIDES = [
-  { name: "Photo Gallery 1", img: photo1Img },
-  { name: "Photo Gallery 2", img: photo2Img },
-  // { name: "Photo Gallery 3", img: photo3Img },
-  // { name: "Photo Gallery 4", img: photo4Img },
-  { name: "Photo Gallery 5", img: photo5Img },
-  { name: "Photo Gallery 6", img: photo6Img },
-  { name: "Photo Gallery 7", img: photo7Img },
-  { name: "Photo Gallery 8", img: photo8Img },
-  { name: "Photo Gallery 9", img: photo9Img },
-  { name: "Photo Gallery 10", img: photo10Img },
-  { name: "Photo Gallery 11", img: photo11Img },
-];
-
 const Slider: React.FC = () => {
+  const SLIDES = [
+    { name: "Photo Gallery 1", img: photo1Img },
+    { name: "Photo Gallery 2", img: photo2Img },
+    // { name: "Photo Gallery 3", img: photo3Img },
+    // { name: "Photo Gallery 4", img: photo4Img },
+    { name: "Photo Gallery 5", img: photo5Img },
+    { name: "Photo Gallery 6", img: photo6Img },
+    { name: "Photo Gallery 7", img: photo7Img },
+    { name: "Photo Gallery 8", img: photo8Img },
+    { name: "Photo Gallery 9", img: photo9Img },
+    { name: "Photo Gallery 10", img: photo10Img },
+    { name: "Photo Gallery 11", img: photo11Img },
+  ];
+  
   const [pause, setPause] = useState(false);
   const timer = useRef<NodeJS.Timeout>();
   const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
